@@ -1,9 +1,12 @@
 import React from 'react';
+import {shallow} from 'enzyme';
 
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const wrapper = shallow(<App />);
+
   const [count, setCount] = React.useState(0);
 
   return (

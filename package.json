@@ -4,8 +4,19 @@
   "author": "ThunderMiracle",
   "private": true,
   "scripts": {
-    "lint": "pnpm run lint -r"
+    "lint": "pnpm run lint -r",
+    "test": "vitest --global"
   },
-  "devDependencies": {},
-  "prettier": "@web-configs/prettier"
+  "devDependencies": {
+    "@typescript-eslint/parser": "^5.13.0",
+    "@web-configs/prettier": "^0.1.0",
+    "jest": "^27.5.1",
+    "typescript": "^4.6.2",
+    "vitest": "^0.5.9"
+  },
+  "prettier": "@web-configs/prettier",
+  "dependencies": {
+    "@typescript-eslint/utils": "^5.13.0",
+    "eslint": "^8.10.0"
+  }
 }
